@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+*
+{
+    padding : 0;
+    margin: 0;
+    box-sizing: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+a
+{
+    text-decoration: none;
+    color : white;
+}
+
+body
+{
+    background: linear-gradient(0deg, rgba(134,57,209,1) 0%, rgba(72,12,93,1) 100%);
+    background-attachment: fixed;
+    justify-content: center;
+    align-items: center;
+}
+
+#card-container
+{
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+#card
+{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    background: linear-gradient(0deg, rgba(174,126,222,1) 0%, rgba(88,43,103,1) 100%);
+    box-shadow: 10px 10px 20px black;
+    border-radius: 30px;
+    margin-top : 10%;
+}
+
+#icon
+{
+    width: 25%;
+    border : 3px solid white;
+    border-radius: 50%;
+    box-shadow: 10px 10px 20px black;
+    margin-top: 10%;
+}
+
+#github-stats
+{
+    display: flex;
+    flex-direction: column;
+    gap : 15px;
+    box-shadow: 10px 10px 20px black;
+    padding: 3%;
+    border-radius: 30px;
+    background: linear-gradient(0deg, rgba(96,27,203,1) 0%, rgba(211,111,255,1) 100%);
+}
+
+#gitstats-stats
+{
+    width: 100%;
+}
+
+#gitstats-langs
+{
+    width: 100%;
+}
+
+#socials
+{
+    display: flex;
+    width: 100%;
+    background-image: radial-gradient(circle, rgba(251,213,63,1) 0%, rgba(187,70,252,1) 100%);
+    border: 3px solid white;
+    justify-content: space-around;
+    width: 85%;
+    border-radius: 30px;
+    margin-bottom: 5%;
+}
+
+#socials-item
+{
+    margin: 10px 0px 10px 0px;
+}
+
+#socials-icons-background
+{
+    color : white;
+    transition: 0.5s;
+    padding-left: 10%;
+    padding-right: 10%;
+    border-radius: 30px;
+}
+
+#socials-icons-background:hover
+{
+    background: white;
+    color : black;
+}
+
+#grid
+{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top : 50%;
+    z-index: -9999;
+}
+
+#sun
+{
+    position: fixed;
+    width: 40%;
+    top : 0%;
+    left : 30%;
+    z-index: -99991;
+}
+
+#name
+{
+    color : white;
+    font-size: 32px;
+    text-align: center;
+    text-shadow: 0 0 20px white;
+    padding : 20px;
+}
+
+#op
+{
+    color : white;
+    font-size: 32px;
+    border-radius: 30px;
+    background: linear-gradient(0deg, rgba(126,43,212,1) 0%, rgba(216,0,255,1) 100%);
+    box-shadow: 10px 10px 20px black;
+    padding : 2%;
+    text-align: center;
+    text-shadow: 0 0 20px white;
+}
+
+#about-me-div
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8%;
+}
+
+#card-about-me
+{
+    border-radius: 30px;
+    background: linear-gradient(0deg, rgba(96,27,203,1) 0%, rgba(211,111,255,1) 100%);
+    width: 50%;
+    margin: 2%;
+    text-align: center;
+    color : white;
+    word-wrap: break-word;
+    padding : 3%;
+    text-shadow: 0 0 20px white;
+    box-shadow: 10px 10px 20px black;
+}
+
+#about-me
+{
+    color : white;
+    text-align: center;
+    text-shadow: 0 0 20px white;
+    margin : 5%;
+}
+
+#proj-title
+{
+    color : white;
+    font-size: 32px;
+    text-align: center;
+    text-shadow: 0 0 20px white;
+    margin : 5%;
+}
+
+#projects
+{
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: center;
+    gap : 5%;
+}
+
+#project
+{
+    color : white;
+    text-shadow: 0 0 20px white;
+    background: linear-gradient(180deg, rgba(126,43,212,1) 0%, rgba(0,0,0,1) 100%);
+    padding : 5%;
+    border: 3px solid white;
+    border-radius: 30px;
+    box-shadow: 10px 10px 20px black;
+    transition: 0.4s;
+}
+
+#project:hover
+{
+    transform: translateY(-5%);
+    box-shadow: 0 0 20px white;
+}
+
+#cancelled
+{
+    background-color: red;
+    border-radius: 10px;
+    padding : 1%;
+    width: max-content;
+}
+
+#discontinued
+{
+    background-color: rgb(255, 213, 0);
+    border-radius: 5px;
+    padding : 1%;
+    width: max-content;
+}
+
+#project-image
+{
+    border-radius: 30px;
+}
+
+#project-description
+{
+    word-wrap: break-word;
+}
+
+@media only screen and (max-width : 930px)
+{
+    #project-image
+    {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width : 650px)
+{
+    #name
+    {
+        color : white;
+        font-size: 25px;
+        text-align: center;
+        text-shadow: 0 0 20px white;
+        padding : 20px;
+    }
+
+    #op
+    {
+        color : white;
+        font-size: 25px;
+        text-align: center;
+        text-shadow: 0 0 20px white;
+    }
+}
+
+@media only screen and (max-width : 500px)
+{
+    #name
+    {
+        color : white;
+        font-size: 16px;
+        text-align: center;
+        text-shadow: 0 0 20px white;
+        padding : 20px;
+    }
+
+    #op
+    {
+        color : white;
+        font-size: 16px;
+        text-align: center;
+        text-shadow: 0 0 20px white;
+    }
+}
+
+@media only screen and (max-width : 310px)
+{
+    #name
+    {
+        color : white;
+        font-size: 10px;
+        text-align: center;
+        text-shadow: 0 0 20px white;
+        padding : 20px;
+    }
+
+    #op
+    {
+        color : white;
+        font-size: 10px;
+        text-align: center;
+        text-shadow: 0 0 20px white;
+    }
+}
